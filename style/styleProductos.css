@@ -77,6 +77,117 @@ section .tarjeta .divimg .img{
     width: 250px;
 }
 
+/*Carrusel*/
+
+
+img{
+    width: 300px;
+}
+
+#button-prev{
+    width: 50px;
+    height: 50px;
+}
+
+#button-prev img{
+    width: 30px;
+}
+
+#button-next{
+    
+    width: 50px;
+    height: 50px;
+}
+
+#button-next img{
+    width: 30px;
+}
+
+.slick picture .btn{
+    background-color: var(--color-anaranjado);
+}
+
+.carousel{
+    width: 100%;
+    margin: 0px 60px;
+}
+
+.slick-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.slick{
+    position: relative;
+    width: 275px;
+    padding: 0 18px;
+    margin: 10px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slick-arrow{
+    position: absolute;
+    z-index: 4;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.slick-arrow:focus{
+    outline: 0;
+}
+
+.slick-arrow img{
+    width: 12px;
+    height: 100%;
+}
+
+.slick-prev{
+    left: 0px;
+}
+
+.slick-next{
+    right: 0px;
+}
+
+#slick{
+    margin: 10px;
+    overflow: hidden;
+}
+
+.modal .modal-body{
+    display: flex;
+    justify-content: center;
+}
+
+.modal .img{
+    width: 300px;
+}
+ .carousel .img{
+    width: 300px;
+ }
+
 /*boton de compra*/
 section .tarjeta .compra{
     display: flex;
