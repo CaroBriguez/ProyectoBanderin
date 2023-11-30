@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/styleEspacio&footer.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="shortcut icon" href="./assets/banderin-favicon-01.webp" type="logo-banderin">
     <title>Banderin Hecho a Mano</title>
     <!--google fonts-->
@@ -14,9 +15,12 @@
     <link rel="stylesheet" href="./style/styleProductos.css">
     <link rel="stylesheet" href="./style/styleHero.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!--Hero-->
     <section class="contenedor">
@@ -35,7 +39,7 @@
         <h2>Productos por categorias</h2>
         <div class="linea"></div>
     </div>
-   <!-- <section class="container">
+    <!-- <section class="container">
         <div class="tarjeta">
             <div class="divimg">
             <img class="img" src="./assets/dsc-0761.webp" alt="product">
@@ -149,14 +153,114 @@
         </div>
     </div>
 
-    <!--Productos favoritos-->    
+    <!--Productos favoritos-->
+
     <section class="favoritos">
         <div class="profav">
-            <h2>Productos favoritos</h2>
+            <h2>Productos <br>favoritos</h2>
             <div class="linea"></div>
         </div>
-            
         <div class="tarjeta">
+            <button class="btn-modal" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                <div class="divimg">
+                    <img class="img" src="assets/DSC_0916.webp" alt="">
+                </div>
+            </button>
+            <button class="btn-modal" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                <div class="divimg">
+                    <img class="img" src="assets/IMG_20230810_170343.webp" alt="">
+                </div>
+            </button>
+            <button class="btn-modal" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                <div class="divimg">
+                    <img class="img" src="assets/IMG_20230823_161304.webp" alt="">
+                </div>
+            </button>
+            <button class="btn-modal" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                <div class="divimg">
+                    <img class="img" src="assets/DSC_0882.webp" alt="">
+                </div>
+            </button>
+        </div>
+        <div class="verMas">
+            <button class="btn btn-verMas">
+                <a href="./carrusel.html" target="_blank" rel="noopener noreferrer">ver mas</a>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel1">Cremas corporales</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img" src="assets/DSC_0916.webp" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel2">Vitro</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img" src="assets/IMG_20230810_170343.webp" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel3">Cerámica</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img" src="assets/IMG_20230823_161304.webp" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel4">Perfumes y esencias</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="img" src="assets/DSC_0882.webp" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--     <div class="tarjeta">
             <div class="divimg">
             <img class="img" src="./assets/DSC_0916.webp" alt="product">
             </div>
@@ -181,15 +285,21 @@
             <div class="carrousel">
                 <img src="./assets/foto-tienda.webp" alt="tienda" class="imagen">
             </div>
-            
+
             <div class="texto">
-                
-                <p>Somos Banderín Hecho a Mano, una tienda colectiva de productorxs marplatenses abierta al publico desde hace más de 5 años. En nuestro espacio podes encontrar a más de 80 compañerxs apostando a la produccion artesanal, ecologica y a la economía solidaria. Trabajamos de manera autogestiva y colaborativa tejiendo redes entre productor y consumidor: ¡para que puedas conocer la historia de quienes estan detras de cada producto! A su vez, buscamos fomentar un comercio justo y para todxs, ofreciendo variedad de precios y promociones para que el acceso a bienes artesanales y únicos no sea un privilegio.</p>
-    
+
+                <p>Somos Banderín Hecho a Mano, una tienda colectiva de productorxs marplatenses abierta al publico
+                    desde hace más de 5 años. En nuestro espacio podes encontrar a más de 80 compañerxs apostando a la
+                    produccion artesanal, ecologica y a la economía solidaria. Trabajamos de manera autogestiva y
+                    colaborativa tejiendo redes entre productor y consumidor: ¡para que puedas conocer la historia de
+                    quienes estan detras de cada producto! A su vez, buscamos fomentar un comercio justo y para todxs,
+                    ofreciendo variedad de precios y promociones para que el acceso a bienes artesanales y únicos no sea
+                    un privilegio.</p>
+
                 <p>¡Veni a conocernos y elegí artesanal, local autogestivo y amoroso!</p>
-            </div>    
+            </div>
         </div>
-        
+
         <!--<div class="fondo">
         <img src="./assets/q.Somos.png" alt="fondo">
         </div>
@@ -200,9 +310,10 @@
         <div class="contenedor_espacioBanderin">
             <div class="fondo_espacioBanderin">
                 <p class="texto_espacioBanderin">
-                    💚 Sabias que...? 
+                    💚 Sabias que...?
                     Contamos con un espacio en planta alta para que puedas brindar clases talleres, charlas y más?!
-                    Asique si estás buscando, o sabes de alguien que necesite de un espacio en pleno centro llenito de amor, no dudes en mandarnos mensajito privado y te enviamos la propuesta!
+                    Asique si estás buscando, o sabes de alguien que necesite de un espacio en pleno centro llenito de
+                    amor, no dudes en mandarnos mensajito privado y te enviamos la propuesta!
                     <br>
                     🌿 Déjanos un comentario si ya pasaste a conocerlo 💚
             </div>
@@ -213,16 +324,16 @@
         </div>
     </section>
 
-    <!--Novedades--> 
+    <!--Novedades-->
     <section class="novedades">
-        
+
         <div class="contedor_novedades">
             <h2 class="subtitulo_novedades">Recibi todas las novedades</h2>
             <p class="texto">suscribete de manera gratuita y enterate de todo!</p>
             <form class="contactoForm">
-                <label  for="nombre"></label>
+                <label for="nombre"></label>
                 <input class="inputs" type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
-                <label  for="email"></label>
+                <label for="email"></label>
                 <input class="inputs" type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico">
                 <button class="buttonPrimary" type="button">Enviar</button>
             </form>
@@ -239,6 +350,9 @@
         Todos los derechos a Mar Del Plata Programa 2023&reg
     </footer>
     <script src="productos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

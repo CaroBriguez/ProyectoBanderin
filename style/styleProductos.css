@@ -256,8 +256,23 @@ section .tarjeta .divimg .btn{
     padding: 1rem;
     left: 30rem;
     background-color: var(--color-anaranjado);
+}
+
+.favoritos .verMas .btn a{
+    text-decoration: none;
     color: antiquewhite;
 }
+/*Modal*/
+
+.modal .modal-body{
+    display: flex;
+    justify-content: center;
+}
+
+.modal .img{
+    width: 300px;
+}
+
 
 @media  (max-width: 2560px) {
     .favoritos .verMas .btn{
