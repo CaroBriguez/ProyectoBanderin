@@ -1,14 +1,21 @@
 :root{
-    --color-anaranjado: #cb973a;
-    --color-turquesa: #35ec9d;
+    --color-naranja: #f2794c;
+    --color-mostaza: #d79d22;
+    --color-mostaza-ligth:#d79e22c4;
+    --color-pastel: #fed9a2;
+    --color-blanco: #fff;
+    --color-celeste: #cce7d4;
     --lineas: lineas{
         width: 800px;
     height: 3px;
-    background-color: var(--color-anaranjado);
-    border: solid var(--color-anaranjado) 0.1px;
+    background-color: var(var(--color-naranja));
+    border: solid var(var(--color-naranja)) 0.1px;
     margin: 65px 120px 0 0;
+    --tipografia-primaria: 'Playfair Display', serif;
+      --tipografia-secundaria: 'Roboto', sans-serif;
     }
 }
+
 
 *{
     margin: 0;
@@ -34,7 +41,7 @@ h2{
 }
 
 .prodCategoria h2{
-    color: var(--color-anaranjado);
+    color: var(--color-naranja);
 }
 
 .linea{
@@ -77,6 +84,117 @@ section .tarjeta .divimg .img{
     width: 250px;
 }
 
+/*Carrusel*/
+
+
+img{
+    width: 300px;
+}
+
+#button-prev{
+    width: 50px;
+    height: 50px;
+}
+
+#button-prev img{
+    width: 30px;
+}
+
+#button-next{
+    
+    width: 50px;
+    height: 50px;
+}
+
+#button-next img{
+    width: 30px;
+}
+
+.slick picture .btn{
+    background-color: var(--color-naranja);
+}
+
+.carousel{
+    width: 100%;
+    margin: 0px 60px;
+}
+
+.slick-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.slick{
+    position: relative;
+    width: 275px;
+    padding: 0 18px;
+    margin: 10px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slick-arrow{
+    position: absolute;
+    z-index: 4;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.slick-arrow:focus{
+    outline: 0;
+}
+
+.slick-arrow img{
+    width: 12px;
+    height: 100%;
+}
+
+.slick-prev{
+    left: 0px;
+}
+
+.slick-next{
+    right: 0px;
+}
+
+#slick{
+    margin: 10px;
+    overflow: hidden;
+}
+
+.modal .modal-body{
+    display: flex;
+    justify-content: center;
+}
+
+.modal .img{
+    width: 300px;
+}
+ .carousel .img{
+    width: 300px;
+ }
+
 /*boton de compra*/
 section .tarjeta .compra{
     display: flex;
@@ -103,7 +221,7 @@ section .tarjeta .divimg .btn{
 .favoritos{
     width: 100%;
     height: 600px;
-    background-color: var(--color-pastel);
+    background-color: var(--color-celeste);
     margin-top: 100px;
 }
 
@@ -116,7 +234,7 @@ section .tarjeta .divimg .btn{
 }
 
 .favoritos .profav h2{
-    color: var(--color-naranja);
+    color: var(--color-mostaza);
 }
 
 .favoritos .tarjeta{
@@ -136,22 +254,54 @@ section .tarjeta .divimg .btn{
 
 .favoritos .profav .linea{
     height: 3px;
-    background-color: var(--color-naranja);
-    border: solid var(--color-naranja) 0.1px;
+    background-color: var(--color-mostaza);
+    border: solid var(--color-mostaza) 0.1px;
 }
 
 .favoritos .verMas .btn{
     position: relative;
     padding: 1rem;
     left: 30rem;
-    background-color: var(--color-anaranjado);
+    background-color: var(--color-mostaza);
+}
+
+.favoritos .verMas a{
+    text-decoration: none;
     color: antiquewhite;
 }
 
+/*Carrusel*/
+
+#button-next{
+    background-color: var(--color-mostaza);
+}
+
+#button-prev{
+    background-color: var(--color-mostaza);
+}
+
+
+/*Modal*/
+
+.modal .modal-body{
+    display: flex;
+    justify-content: center;
+}
+
+.modal .img{
+    width: 300px;
+}
+
+.modal .modal-footer .btn{
+    background-color: var(--color-mostaza);
+    color: white;
+}
+
+
 @media  (max-width: 2560px) {
     .favoritos .verMas .btn{
-        left: 77rem;
-        top: 2rem;
+        left: 74rem;
+        top: 1rem;
     }
 }
 
@@ -159,9 +309,9 @@ section .tarjeta .divimg .btn{
     .favoritos .verMas .btn{
         position: relative;
         padding: 1rem 2rem;
-        left: 41rem;
-        top: 2rem;
-        background-color: var(--color-anaranjado);
+        left: 65rem;
+        top: 1rem;
+        background-color: var(--color-mostaza);
         color: antiquewhite;
     }
 }
@@ -213,9 +363,17 @@ section .tarjeta .divimg .btn{
         top: 23px;
         margin-right: 20px;
         margin-top: -2rem;
-        left: 21rem;
+        left: 18rem;
         padding: 1rem 2rem;
 
+        }
+
+        .favoritos .profav h2{
+            text-align: center;
+        }
+
+        .proCat h2{
+            text-align: center;
         }
 }
 

@@ -31,11 +31,11 @@
     z-index: 2;
 }
 
-button {
+.btn {
 --s: .25em; /* controlar ondas*/
 
 padding: .4em .5em;
-background-color: #BF4D28;
+background-color: /*#BF4D28;*/var(--color-mostaza);
 color: #fff;
 --_s: calc(var(--s)*2) 51% repeat-x;
 --_r: calc(1.345*var(--s)) at left 50%;
